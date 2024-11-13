@@ -4,6 +4,10 @@
     background-position: center, 65%;
     width: 100vw; 
     height: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
 
 }
 .intro {
@@ -11,6 +15,44 @@
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+  font-size: x-large;
   position: absolute;
-  align-self: center;
+  text-align: center;
+}
+.welcome-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 25%;
+    height: 20%;
+}
+/* welcome animations */
+
+.intro-1 {
+    opacity: 1;
+    animation: welcome1 20s linear 20s infinite alternate forwards ;
+}
+
+.intro-2 {
+    opacity: 0;
+    animation: welcome2 20s linear 20s infinite alternate forwards;
+}
+
+@keyframes welcome1 {
+    0% { opacity: 1;}
+    25% {opacity: 1;}
+    45% {opacity: 1;}
+    50% { opacity: 0;}
+    75% { opacity: 0;}
+    100% { opacity: 0;}
+}
+
+@keyframes welcome2 {
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    45% {opacity: 0;}
+    50% { opacity: 1;}
+    75% {opacity: 1;}
+    100% {opacity: 1;}
 }
