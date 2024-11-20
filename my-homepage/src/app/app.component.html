@@ -1,14 +1,8 @@
 <!DOCTYPE html>
-
-<div>
-  <app-home>
-  <nav>
-    <ul>
-      <li><a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a></li>
-      <li><a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About</a></li>
-    </ul>
-  </nav>
-</app-home>
-</div>
+<nav>
+    <a class="button" routerLink="/" routerLinkActive="activebutton" ariaCurrentWhenActive="page">Home</a>
+    <a class="button" routerLink="/about" routerLinkActive="activebutton" ariaCurrentWhenActive="page">About</a>
+    
+</nav>
 
 <router-outlet></router-outlet>

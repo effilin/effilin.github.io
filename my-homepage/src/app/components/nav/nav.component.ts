@@ -5,7 +5,7 @@ import { HomeComponent } from '../home/home.component';
 @Component({
   selector: 'app-nav',
   standalone: true,
-  imports: [],
+  imports: [RouterLink,RouterLinkActive, RouterOutlet],
   templateUrl: './nav.component.html',
   styleUrl: './nav.component.css'
 })
